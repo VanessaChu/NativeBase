@@ -191,7 +191,7 @@ class PickerNB extends Component {
                 button
                 style={this.props.itemStyle}
                 onPress={() => {
-                  this._setModalVisible(false);
+                  // this._setModalVisible(this.props.closeOnPick || false);
                   this.props.onValueChange(item.props.value);
                   this.setState({ current: item.props.label });
                 }}
